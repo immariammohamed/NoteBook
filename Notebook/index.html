@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Notes App</title>
+
+</head>
+<body>
+<div id="app">
+    <div id="addNotesForm">
+        <form class="add-note">
+            <!--نحتاج القيمة الي فيها بحيث اذا تمت الاضافه نمسح القيمة الي فيها-->
+            <textarea></textarea>
+            <div>
+                <button class="btn" type="submit">اضافة ملاحظة</button>
+
+            </div>
+        </form>
+        <div class="action-button">
+            <button class="btn " id="reverseBtn">عكس الترتيب</button>
+            <button class="btn" id="clearAllBtn">حذف الكل</button>
+        </div>
+    </div>
+    
+    <div id="notes"></div>
+</div>
+    <script src="/note-class.js">
+        //note-class 1st
+    </script>
+    <script src="/app.js">
+        //app.js the 2nd because it depend on note-class
+    </script>
+</body>
+</html>
